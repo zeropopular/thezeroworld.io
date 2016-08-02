@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>OutSider | Coming Soon</title>
+        <meta name="description" content="HTML5 Personal Blog Magazine Style Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Your Name">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/linea-icomoon.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <script src="js/vendor/modernizr.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Coming Soon -->
+        <main class="main coming-soon flex flex-middle" role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="text-center">
+                            <h1 class="page-title">Outsider</h1>
+                            <h3 class="snserif">Will be back soon</h3>
+                            <br />
+                            <span id="timer" class="timer"></span>
+                        </section>
+                    </div>
+                    <div class="col-md-4 col-md-offset-4">
+                        <!-- Subscribe Form -->
+                        <form action="php/newsletter-form.php" id="contact-form" class="subscription-form" role="form">
+                            <div class="alert alert-success hidden" id="contact-alert-success">
+                                <strong>Success!</strong> Thank you for your message. Reply will be in a while!
+                            </div>
+                            <div class="alert alert-danger hidden" id="contact-alert-error">
+                                <strong>Error!</strong> Something went wrong sending your message.
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="email"></label>
+                                <input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
+                            </div>
+                            <button type="submit" class="icon icon-mail btn-inside" data-loading-text="..."></button>
+                        </form>
+                    </div>
+                </div>
+                <article class="principle sevena">
+                    <div class="shape-container">
+                        <div class="shape a"></div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="js/vendor/jquery.appear.js"></script>
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="js/vendor/isotope.pkgd.min.js"></script>
+        <script src="js/vendor/jquery.infinitescroll.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/jquery.tweet.min.js"></script>
+        <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script src="js/vendor/jquery.validate.min.js"></script>
+        <script src="js/contact.js"></script>
+
+        <!-- Countdown -->
+        <script src="js/vendor/jquery.countdown.min.js"></script>
+        <script>
+            $('#timer').countdown('2015/12/31', function(event) {   //set date YYYY/MM/DD or YYYY/MM/DD HH:MM:SS
+                var format = '%D days %H:%M:%S';
+                $(this).html(event.strftime(format));
+            });
+        </script>
+
+    </body>
+</html>

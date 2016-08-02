@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>OutSider</title>
+        <meta name="description" content="HTML5 Personal Blog Magazine Style Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Your Name">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/linea-icomoon.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <script src="js/vendor/modernizr.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div class="preloader flex flex-middle">
+            <img src="img/svg/cube.svg" class="preloader-cubes" alt="Loading..." />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top is-transparent" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Nathan Andrew Varley</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" role="menubar">
+                        <li role="menuitem"><a href="index.html">Home</a></li>
+                        <li role="menuitem"><a href="about.html">My Resume</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact Me</a></li>
+                        <li class="dropdown" role="menuitem">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a href="post-leftsidebar.html">Left Sidebar</a></li>
+                                <li role="menuitem"><a href="post-rightsidebar.html">Right Sidebar</a></li>
+                                <li role="menuitem"><a href="post-centered.html">Centered Post</a></li>
+                                <li role="menuitem"><a href="404.html">Page 404</a></li>
+                                <li role="menuitem"><a href="comingsoon.html">Coming Soon</a></li>
+                                <li role="menuitem"><a href="shortcodes.html">Shortcodes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#share-popup" class="iconized open-popup-link" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="icon icon-share"></i></a>
+                            <!-- Popup Content -->
+                            <div id="share-popup" class="full-popup mfp-hide">
+                                <article class="share">
+                                    <h3 class="snserif">Share this page</h3>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                                        <li><a href="#" class="fa fa-tumblr"></a></li>
+                                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#search-popup" class="iconized open-popup-link" data-toggle="tooltip" data-placement="bottom" title="Search"><i class="icon icon-magnifier"></i></a>
+                            <!-- Popup Content -->
+                            <div id="search-popup" class="full-popup mfp-hide">
+                                <article class="search">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h3 class="snserif">Search</h3>
+                                            <div class="input-group col-md-4 col-md-offset-4">
+                                                <input type="text" class="form-control" placeholder="Type and press enter to search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header class="header hero flex flex-middle" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <h1>Jack Eastwood</h1>
+                        <h4 class="snserif">Not another blogger</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="main" role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Filter -->
+                        <ul id="filter" class="filter">
+                            <li><a data-filter="*" class="btn btn-filter" role="button" data-text="All">All</a></li>
+                            <li><a data-filter=".design" class="btn btn-filter" role="button" data-text="Design">Design</a></li>
+                            <li><a data-filter=".inspiration" class="btn btn-filter" role="button" data-text="Inspiration">Inspiration</a></li>
+                            <li><a data-filter=".adventure" class="btn btn-filter" role="button" data-text="Adventure">Adventure</a></li>
+                            <li><a data-filter=".photography" class="btn btn-filter" role="button" data-text="Photography">Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Masonry -->
+                <section class="masonry">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="item design" data-category="design">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Wood package</a></h4>
+                                <h6 class="category">Design</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item inspiration" data-category="inspiration">
+                        <article class="post">
+                            <figure class="figure rectangle-big">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Skate shadow</a></h4>
+                                <h6 class="category">Inspiration</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item photography" data-category="photography">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Dark beauty</a></h4>
+                                <h6 class="category">Photography</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item inspiration" data-category="inspiration">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">In the square</a></h4>
+                                <h6 class="category">Inspiration</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item adventure" data-category="adventure">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Real hipster</a></h4>
+                                <h6 class="category">Adventure</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item photography" data-category="photography">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Safe with style</a></h4>
+                                <h6 class="category">Photography</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item adventure" data-category="adventure">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Bottles battle</a></h4>
+                                <h6 class="category">Adventure</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item design" data-category="design">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Accessories for her</a></h4>
+                                <h6 class="category">Design</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item adventure" data-category="adventure">
+                        <article class="post">
+                            <figure class="figure rectangle-big">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Flight around coast</a></h4>
+                                <h6 class="category">Adventure</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item inspiration" data-category="inspiration">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Say something</a></h4>
+                                <h6 class="category">Inspiration</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item design" data-category="design">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Abstractify</a></h4>
+                                <h6 class="category">Design</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item design" data-category="design">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Lost island</a></h4>
+                                <h6 class="category">Design</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                </section><!-- /.masonry -->
+                <!-- Pagination -->
+                <nav class="content-nav">
+                    <ul class="pager">
+                        <li class="disabled"><a href="page2.html">Older</a></li>
+                        <li><a href="page2.html">Newer</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Scroll top icon-square_up-->
+            <a class="scroll-top icon icon-arrow-up"></a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p>&copy; 2015 OutSider Theme, All Rights Reserved, Made with <i class="fa fa-wrench"></i> by <a href="http://filiponline.tk/" target="_blank">Filip</a></p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <ul class="social-list">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-pinterest"></a></li>
+                            <li><a href="#" class="fa fa-flickr"></a></li>
+                            <li><a href="#" class="fa fa-dribbble"></a></li>
+                            <li><a href="#" class="fa fa-behance"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/vendor/jquery.appear.js"></script>
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="js/vendor/isotope.pkgd.min.js"></script>
+        <script src="js/vendor/jquery.infinitescroll.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/jquery.tweet.min.js"></script>
+        <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

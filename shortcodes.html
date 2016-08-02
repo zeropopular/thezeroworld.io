@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>OutSider | Shortcodes</title>
+        <meta name="description" content="HTML5 Personal Blog Magazine Style Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Your Name">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/linea-icomoon.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <!-- Shortcodes -->
+        <style>
+            .shortcode {
+                position: relative;
+                padding: 6em 0 8em;
+            }
+            .shortcode-title {
+                display: block;                
+                margin: 2em 0;
+                padding: 0.5em 1em;
+                color: #fff;
+                background: #bec6c4;
+                text-align: center;
+            }
+            .grid-tables .row {
+                margin-bottom: 1em;
+            }
+            .grid-tables p {
+                background: #FFF;
+                padding: 0.625em;
+            }
+            .example-slider {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                cursor: grab;
+            }
+            .icon-samples {
+                text-align: center;
+                font-family: inherit;
+            }
+            .icon-samples .icon,
+            .icon-samples .fa {
+                font-size: 3em;
+                margin-bottom: 2em;
+                cursor: pointer;
+            }
+        </style>
+
+        <script src="js/vendor/modernizr.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div class="preloader flex flex-middle">
+            <img src="img/svg/cube.svg" class="preloader-cubes" alt="Loading..." />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">OutSider</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" role="menubar">
+                        <li role="menuitem"><a href="index.html">Home</a></li>
+                        <li role="menuitem"><a href="about.html">About Me</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
+                        <li class="dropdown" role="menuitem">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a href="post-leftsidebar.html">Left Sidebar</a></li>
+                                <li role="menuitem"><a href="post-rightsidebar.html">Right Sidebar</a></li>
+                                <li role="menuitem"><a href="post-centered.html">Centered Post</a></li>
+                                <li role="menuitem"><a href="404.html">Page 404</a></li>
+                                <li role="menuitem"><a href="comingsoon.html">Coming Soon</a></li>
+                                <li role="menuitem"><a href="shortcodes.html">Shortcodes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#share-popup" class="iconized open-popup-link" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="icon icon-share"></i></a>
+                            <!-- Popup Content -->
+                            <div id="share-popup" class="full-popup mfp-hide">
+                                <article class="share">
+                                    <h3 class="snserif">Share this page</h3>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                                        <li><a href="#" class="fa fa-tumblr"></a></li>
+                                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#search-popup" class="iconized open-popup-link" data-toggle="tooltip" data-placement="bottom" title="Search"><i class="icon icon-magnifier"></i></a>
+                            <!-- Popup Content -->
+                            <div id="search-popup" class="full-popup mfp-hide">
+                                <article class="search">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h3 class="snserif">Search</h3>
+                                            <div class="input-group col-md-4 col-md-offset-4">
+                                                <input type="text" class="form-control" placeholder="Type and press enter to search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header class="site-header" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="post-title">Shortcodes</h1>
+                        <h4 class="snserif">Showcase of Outsider's Elements</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="main" role="main">
+            <div class="container">
+                <!-- Grid system -->
+                <section class="shortcode text-justify">
+                    <article class="grid-tables">
+                        <h4><small>(* = xs,sm,md or lg)</small></h4>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>.col-*-12</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>.col-*-6</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>.col-*-6</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>.col-*-4</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>.col-*-4</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>.col-*-4</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>.col-*-3</h4>
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>.col-*-3</h4>
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>.col-*-3</h4>
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>.col-*-3</h4>
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                
+                <!-- Slider -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <ul class="example-slider">
+                                <li><img src="img/thumbs/placeholder3.jpg" alt="img" /></li>
+                                <li><img src="img/thumbs/placeholder3a.jpg" alt="img" /></li>
+                                <li><img src="img/thumbs/placeholder3b.jpg" alt="img" /></li>
+                                <li><img src="img/thumbs/placeholder3a.jpg" alt="img" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Typography -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Montserrat Title</h3>
+                            <h5 class="snserif">Inconsolata Subitle</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie. </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="snserif">Inconsolata Title</h3>
+                            <h5 class="snserif">Inconsolata Subitle</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie. </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Cards: Services -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <i class="icon icon-display"></i>
+                                <div class="card-text">
+                                    <h4>Web Design</h4>
+                                    <p>Phasellus libero consectetur ellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem ipsum lacus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <i class="icon icon-gunsight"></i>
+                                <div class="card-text">
+                                    <h4>Branding</h4>
+                                    <p>Phasellus libero consectetur ellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem ipsum lacus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <i class="icon icon-photo"></i>
+                                <div class="card-text">
+                                    <h4>Photography</h4>
+                                    <p>Phasellus libero consectetur ellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem ipsum lacus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <i class="icon icon-gear"></i>
+                                <div class="card-text">
+                                    <h4>Development</h4>
+                                    <p>Phasellus libero consectetur ellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem ipsum lacus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <i class="icon icon-paperplane"></i>
+                                <div class="card-text">
+                                    <h4>Advertising</h4>
+                                    <p>Phasellus libero consectetur ellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem ipsum lacus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <i class="icon icon-case"></i>
+                                <div class="card-text">
+                                    <h4>Marketing</h4>
+                                    <p>Phasellus libero consectetur ellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem ipsum lacus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Accordion Toggle -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                First Accordion
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Second Accordion
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Third Accordion
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel-group" id="toggle" data-toggle="false" role="tablist" aria-multiselectable="true"><!-- use data-toggle="false" for toggle -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#toggleOne" aria-expanded="true" aria-controls="toggleOne">
+                                                First Toggle
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="toggleOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#toggleTwo" aria-expanded="false" aria-controls="toggleTwo">
+                                                Second Toggle
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="toggleTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#toggleThree" aria-expanded="false" aria-controls="toggleThree">
+                                                Third Toggle
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="toggleThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tabs -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">First Tab</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Second Tab</a></li>
+                                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Third Tab</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        The lysine contingency - it's intended to prevent the spread of the animals is case they ever got off the island. Dr. Wu inserted a gene that makes a single faulty enzyme in protein metabolism. The animals can't manufacture the amino acid lysine. Unless they're continually supplied with lysine by us, they'll slip into a coma and die.
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="messages">
+                                        You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Alerts -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="alert alert-success" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Well done!</strong> You successfully read this important alert message. 
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important. 
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Warning!</strong> You successfully read this important alert message. 
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Oh snap!</strong> Change a few things up and try submitting again. 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Counters -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="numbers">
+                                <span class="number" data-from="0" data-to="987" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="number-info">Creative Ideas</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="numbers">
+                                <span class="number" data-from="0" data-to="218" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="number-info">Projects Designed</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="numbers">
+                                <span class="number" data-from="0" data-to="1356" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="number-info">Pizzas Eaten</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="numbers">
+                                <span class="number" data-from="0" data-to="1856" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="number-info">Coffee Drunk</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pricing Tables -->
+                <section class="shortcode">
+                    <div class="container">
+                        <div class="row">                
+                            <div class="col-md-3">
+                                <ul class="pricing-table list-unstyled">
+                                    <li class="title">Beginner</li>
+                                    <li class="price">19.99<sup>$</sup></li>
+                                    <li class="description">1 Database</li>
+                                    <li class="description">5GB Storage</li>
+                                    <li class="description">20 Users</li>
+                                    <li class="cta-button"><a class="btn btn-default btn-block" href="#">Buy Now</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="pricing-table list-unstyled">
+                                    <li class="title">Standard</li>
+                                    <li class="price">39.99<sup>$</sup></li>
+                                    <li class="description">1 Database</li>
+                                    <li class="description">5GB Storage</li>
+                                    <li class="description">20 Users</li>
+                                    <li class="cta-button"><a class="btn btn-default btn-block" href="#">Buy Now</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="pricing-table recommended list-unstyled">
+                                    <li class="title">Premium</li>
+                                    <li class="price">69.99<sup>$</sup></li>
+                                    <li class="description">1 Database</li>
+                                    <li class="description">5GB Storage</li>
+                                    <li class="description">20 Users</li>
+                                    <li class="cta-button"><a class="btn btn-info btn-block" href="#">Buy Now</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="pricing-table list-unstyled">
+                                    <li class="title">Custom</li>
+                                    <li class="price">169.99<sup>$</sup></li>
+                                    <li class="description">111 Database</li>
+                                    <li class="description">115GB Storage</li>
+                                    <li class="description">120 Users</li>
+                                    <li class="cta-button"><a class="btn btn-default btn-block" href="#">Buy Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Progress Bars -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="progress-wrap">
+                                <span class="progress-label">Storytelling</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success rising-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="sr-only">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-wrap">
+                                <span class="progress-label">Copywriting</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info progress-bar-striped rising-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="sr-only">65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-wrap">
+                                <span class="progress-label">Photography</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning progress-bar-striped active rising-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="sr-only">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress-wrap">
+                                <span class="progress-label">Storytelling</span>
+                                <div class="progress">
+                                    <div class="progress-bar rising-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="bar-value"></span>
+                                        <span class="sr-only">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-wrap">
+                                <span class="progress-label">Copywriting</span>
+                                <div class="progress">
+                                    <div class="progress-bar rising-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="bar-value"></span>
+                                        <span class="sr-only">65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-wrap">
+                                <span class="progress-label">Photography</span>
+                                <div class="progress">
+                                    <div class="progress-bar rising-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="bar-value"></span>
+                                        <span class="sr-only">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Post Article -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <article class="post">
+                                <h1 class="post-title">This is article</h1>
+                                <h4 class="category snserif">See structure</h4>
+                                <section class="post-content">
+                                    <p>First paragraph of each post is always bold. Automatically. Lorem ipsum lysine contingency - it's intended to prevent the spread of the animals is case they ever got off the island. Dr. Wu inserted a gene that makes a single faulty enzyme in protein metabolism.</p>
+                                    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke.</p>
+                                    <blockquote class="quote">
+                                        Products have to be designed in a way that they are comprehensible.
+                                        <cite>Dieter Rams</cite>
+                                    </blockquote>
+                                    <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'?</p>
+                                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                                
+                <!-- Buttons -->
+                <section class="shortcode">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-default">Default</button>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <!-- Indicates a successful or positive action -->
+                            <button type="button" class="btn btn-success">Success</button>
+                            <!-- Contextual button for informational alert messages -->
+                            <button type="button" class="btn btn-info">Info</button>
+                            <!-- Indicates caution should be taken with this action -->
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <!-- Indicates a dangerous or potentially negative action -->
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                            <button type="button" class="btn btn-link">Link</button>
+                            <br /><br /><br />
+                            <!-- Button for Filter: make hover to see effect -->
+                            <a href="#" class="btn btn-filter" role="button" data-text="Button filter">Button filter</a>
+                            <!-- Submit Button - input: make hover to see effect -->
+                            <input type="submit" value="Send Message" class="btn btn-submit" data-loading-text="Loading...">
+                            <br /><br /><br />
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">This is</button>
+                                <button type="button" class="btn btn-default">Button</button>
+                                <button type="button" class="btn btn-default">Group</button>
+                            </div>
+                            <br /><br /><br />
+                            <span class="label label-default">Default Label</span>
+                            <span class="label label-primary">Primary Label</span>
+                            <span class="label label-success">Success Label</span>
+                            <span class="label label-info">Info Label</span>
+                            <span class="label label-warning">Warning Label</span>
+                            <span class="label label-danger">Danger Label</span>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                                <button type="button" class="btn btn-default btn-lg">Large button</button>
+                            </p>
+                            <p>
+                                <button type="button" class="btn btn-primary">Default button</button>
+                                <button type="button" class="btn btn-default">Default button</button>
+                            </p>
+                            <p>
+                                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                                <button type="button" class="btn btn-default btn-sm">Small button</button>
+                            </p>
+                            <p>
+                                <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                                <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                            </p>
+                            <p>
+                                <button type="button" class="btn btn-primary btn-block">Block level button</button>
+                                <button type="button" class="btn btn-default btn-block">Block level button</button>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Icons -->
+                <section class="shortcode icon-samples">
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Linea Icons</h4>
+                            <p>Custom set of <a href="http://linea.io/" target="_blank">Linea Icons</a> generated with <a href="https://icomoon.io/" target="_blank">IcoMoon</a></p>
+                            <a href="http://filiponline.tk/projects/outsider/icomoon/demo.html" target="_blank">See Full List of 530 Icons</a>
+                            <br /><br /><br /><br />
+                        </div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-geolocalize-01" data-toggle="tooltip" data-placement="top" title="icon-geolocalize-01"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-compass" data-toggle="tooltip" data-placement="top" title="icon-compass"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-globe" data-toggle="tooltip" data-placement="top" title="icon-globe"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-watch" data-toggle="tooltip" data-placement="top" title="icon-watch"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-calendar" data-toggle="tooltip" data-placement="top" title="icon-calendar"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-todo-txt" data-toggle="tooltip" data-placement="top" title="icon-todo-txt"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-message" data-toggle="tooltip" data-placement="top" title="icon-message"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-notebook-pen" data-toggle="tooltip" data-placement="top" title="icon-notebook-pen"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-paperplane" data-toggle="tooltip" data-placement="top" title="icon-paperplane"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-sheet-txt" data-toggle="tooltip" data-placement="top" title="icon-sheet-txt"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-share" data-toggle="tooltip" data-placement="top" title="icon-share"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-magnifier" data-toggle="tooltip" data-placement="top" title="icon-magnifier"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-arrow-left" data-toggle="tooltip" data-placement="top" title="icon-arrow-left"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-arrow-right" data-toggle="tooltip" data-placement="top" title="icon-arrow-right"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-arrow-up" data-toggle="tooltip" data-placement="top" title="icon-arrow-up"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-arrow-down" data-toggle="tooltip" data-placement="top" title="icon-arrow-down"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-cart" data-toggle="tooltip" data-placement="top" title="icon-cart"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-safe" data-toggle="tooltip" data-placement="top" title="icon-safe"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-gift" data-toggle="tooltip" data-placement="top" title="icon-gift"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-graph-1" data-toggle="tooltip" data-placement="top" title="icon-graph-1"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-recordplayer" data-toggle="tooltip" data-placement="top" title="icon-recordplayer"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-volume-up" data-toggle="tooltip" data-placement="top" title="icon-volume-up"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-paintroller" data-toggle="tooltip" data-placement="top" title="icon-paintroller"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="icon icon-fog-sun" data-toggle="tooltip" data-placement="top" title="icon-fog-sun"></i></div> 
+                        <div class="col-md-12">
+                            <h4>Font Awesome</h4>
+                            <p><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">See Full List of 479 Icons</a></p>
+                            <br /><br /><br />
+                        </div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-adjust" data-toggle="tooltip" data-placement="top" title="fa-adjust"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-anchor" data-toggle="tooltip" data-placement="top" title="fa-anchor"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-arrows" data-toggle="tooltip" data-placement="top" title="fa-arrows"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-asterisk" data-toggle="tooltip" data-placement="top" title="fa-asterisk"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-crop" data-toggle="tooltip" data-placement="top" title="fa-crop"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-cube" data-toggle="tooltip" data-placement="top" title="fa-cube"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="fa-envelope"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-flag" data-toggle="tooltip" data-placement="top" title="fa-flag"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-home" data-toggle="tooltip" data-placement="top" title="fa-home"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-mobile" data-toggle="tooltip" data-placement="top" title="fa-mobile"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-signal" data-toggle="tooltip" data-placement="top" title="fa-signal"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-square" data-toggle="tooltip" data-placement="top" title="fa-square"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-angle-left" data-toggle="tooltip" data-placement="top" title="fa-angle-left"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-angle-down" data-toggle="tooltip" data-placement="top" title="fa-angle-down"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-arrow-left" data-toggle="tooltip" data-placement="top" title="fa-arrow-left"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-arrow-down" data-toggle="tooltip" data-placement="top" title="fa-arrow-down"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-car" data-toggle="tooltip" data-placement="top" title="fa-car"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-rocket" data-toggle="tooltip" data-placement="top" title="fa-rocket"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="top" title="fa-facebook"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="top" title="fa-twitter"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-pinterest" data-toggle="tooltip" data-placement="top" title="fa-pinterest"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-behance" data-toggle="tooltip" data-placement="top" title="fa-behance"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-dribbble" data-toggle="tooltip" data-placement="top" title="fa-dribbble"></i></div>
+                        <div class="col-xs-4 col-md-2"><i class="fa fa-html5" data-toggle="tooltip" data-placement="top" title="fa-html5"></i></div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- Scroll top icon-square_up-->
+            <a class="scroll-top icon icon-arrow-up"></a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p>&copy; 2015 OutSider Theme, All Rights Reserved, Made with <i class="fa fa-wrench"></i> by <a href="http://filiponline.tk/" target="_blank">Filip</a></p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <ul class="social-list">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-pinterest"></a></li>
+                            <li><a href="#" class="fa fa-flickr"></a></li>
+                            <li><a href="#" class="fa fa-dribbble"></a></li>
+                            <li><a href="#" class="fa fa-behance"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="js/vendor/jquery.appear.js"></script>
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="js/vendor/isotope.pkgd.min.js"></script>
+        <script src="js/vendor/jquery.infinitescroll.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/jquery.tweet.min.js"></script>
+        <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Scripts used in Shortcodes -->
+        <script src="js/vendor/jquery.countTo.js"></script>
+        <script>
+            // Counters
+            $('.number').appear(function () {
+                $('.number').countTo();
+            });
+            // Progressbar
+            $('.progress-wrap').appear(function () {
+                $('.progress').each(function () {
+                    var value = $(this).find('.progress-bar').attr('aria-valuenow');
+                    $(this).find('.progress-bar').animate({
+                        'width': value + '%'
+                    }, 100, function () {
+                        $(this).find('.bar-value').countTo({
+                            from: 0,
+                            to: value,
+                            refreshInterval: 10
+                        }).fadeTo(3300, 1);
+                    });
+                });
+            });
+            // Slick Slider
+            $(document).ready(function () {
+                $('.example-slider').slick({
+                    slide: 'ul>li',
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    dots: true
+                });
+            });
+        </script>
+    
+    </body>
+</html>
